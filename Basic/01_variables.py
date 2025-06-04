@@ -2,28 +2,28 @@
 
 ### Variables ###
 
-my_string_variable = "My String variable"
-print(my_string_variable)
+my_string_variable = "quiero una hamburguesa"
+print(hamburguesa)
 
-my_int_variable = 5
-print(my_int_variable)
+my_int_variable = 42
+print(numero)
 
-my_int_to_str_variable = str(my_int_variable)
-print(my_int_to_str_variable)
-print(type(my_int_to_str_variable))
+número_como_texto = str(numero)
+print(numero_como_texto)
+print(type(numero_como_texto))
 
-my_bool_variable = False
-print(my_bool_variable)
+tengo_sueño= True
+print(tengo_sueño)
 
 # Concatenación de variables en un print
-print(my_string_variable, my_int_to_str_variable, my_bool_variable)
-print("Este es el valor de:", my_bool_variable)
+print(quiero una hamburguesa, numero_como_texto, tengo_sueño)
+print("¿tenes sueño?:", tengo_sueño)
 
 # Algunas funciones del sistema
-print(len(my_string_variable))
+print(len(numero))
 
 # Variables en una sola línea. ¡Cuidado con abusar de esta sintaxis!
-name, surname, alias, age = "Brais", "Moure", 'MoureDev', 35
+name, surname, alias, age = "Sofia", "Loprete", 'Lopretesofi', 17
 print("Me llamo:", name, surname, ". Mi edad es:",
       age, ". Y mi alias es:", alias)
 
@@ -34,8 +34,8 @@ print(name)
 print(age)
 
 # Cambiamos su tipo
-name = 35
-age = "Brais"
+name = 17
+age = "Sofia"
 print(name)
 print(age)
 
