@@ -1,29 +1,30 @@
 # Clase en vídeo: https://youtu.be/Kp4Mvapo5kc
 
-### Hola Mundo ###
+### bienvenido a python ###
 
 # Nuestro hola mundo en Python
-print("Hola Python")
-print('Hola Python')
+print("Bienvenido a Python")
+print('Bienvenido a Python')j
 
-# Esto es un comentario
+# Esto es un comentario simple
 
 """
-Este es un
-comentario
-en varias líneas
+Este comentario
+puede ser escrito
+en varios espacios/lineas
 """
 
 '''
-Este también es un
+Este otro
+también es un
 comentario
-en varias líneas
+de esos
 '''
 
-# Cómo consultar el tipo de dato
-print(type("Soy un dato str"))  # Tipo 'str'
-print(type(5))  # Tipo 'int'
-print(type(1.5))  # Tipo 'float'
-print(type(3 + 1j))  # Tipo 'complex'
-print(type(True))  # Tipo 'bool'
-print(type(print("Mi cadena de texto")))  # Tipo 'NoneType'
+# Cómo consultar el tipo de cada valor
+print(type("caracteres"))  # Tipo 'str'
+print(type(10))  # Tipo 'int'
+print(type(3.14))  # Tipo 'float'
+print(type(7 + 2j))  # Tipo 'complex'
+print(type(False))  # Tipo 'bool'
+print(type(print("Texto de ejemplo")))  # Tipo 'NoneType'
