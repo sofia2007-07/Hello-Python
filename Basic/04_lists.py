@@ -1,4 +1,5 @@
-# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=10872
+# Clase en video:
+# https://youtu.be/Kp4Mvapo5kc?t=10872
 
 ### Lists ###
 
@@ -9,48 +10,41 @@ my_other_list = []
 
 print(len(my_list))
 
-my_list = [35, 24, 62, 52, 30, 30, 17]
-
+my_list = [10, 20, 30, 40, 50]
 print(my_list)
 print(len(my_list))
 
-my_other_list = [35, 1.77, "Brais", "Moure"]
-
+my_other_list = [1.65, 60, "Sofi", "Gómez"]
 print(type(my_list))
 print(type(my_other_list))
 
 # Acceso a elementos y búsqueda
 
 print(my_other_list[0])
-print(my_other_list[1])
+print(my_other_list[2])
 print(my_other_list[-1])
-print(my_other_list[-4])
-print(my_list.count(30))
-# print(my_other_list[4]) IndexError
-# print(my_other_list[-5]) IndexError
+print(my_other_list.count("Sofi"))
+print(my_other_list.index("Sofi"))
 
-print(my_other_list.index("Brais"))
+# Desempaquetado
 
-age, height, name, surname = my_other_list
+height, weight, name, surname = my_other_list
 print(name)
-
-name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
-print(age)
 
 # Concatenación
 
 print(my_list + my_other_list)
-#print(my_list - my_other_list)
+print(my_list * 2)
 
 # Creación, inserción, actualización y eliminación
 
-my_other_list.append("MoureDev")
+my_other_list.append("Estudiante")
 print(my_other_list)
 
 my_other_list.insert(1, "Rojo")
 print(my_other_list)
 
-my_other_list[1] = "Azul"
+my_other_list[2] = "Azul"
 print(my_other_list)
 
 my_other_list.remove("Azul")
@@ -59,20 +53,16 @@ print(my_other_list)
 my_list.remove(30)
 print(my_list)
 
-print(my_list.pop())
-print(my_list)
-
-my_pop_element = my_list.pop(2)
+my_pop_element = my_list.pop(1)
 print(my_pop_element)
 print(my_list)
 
-del my_list[2]
+del my_list[0]
 print(my_list)
 
 # Operaciones con listas
 
 my_new_list = my_list.copy()
-
 my_list.clear()
 print(my_list)
 print(my_new_list)
@@ -89,6 +79,6 @@ print(my_new_list[1:3])
 
 # Cambio de tipo
 
-my_list = "Hola Python"
+my_list = "Programando en Python"
 print(my_list)
 print(type(my_list))
