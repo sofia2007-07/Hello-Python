@@ -1,37 +1,38 @@
-# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=8643
+# Clase en video:
+# https://youtu.be/Kp4Mvapo5kc?t=8643
 
 ### Strings ###
 
-my_string = "Mi String"
-my_other_string = 'Mi otro String'
+my_string = "Hola Mundo"
+my_other_string = 'Python es genial'
 
 print(len(my_string))
 print(len(my_other_string))
-print(my_string + " " + my_other_string)
+print(my_string + " - " + my_other_string)
 
-my_new_line_string = "Este es un String\ncon salto de línea"
+my_new_line_string = "Primera línea\nSegunda línea"
 print(my_new_line_string)
 
-my_tab_string = "\tEste es un String con tabulación"
+my_tab_string = "\tEste es un ejemplo con tabulación"
 print(my_tab_string)
 
-my_scape_string = "\\tEste es un String \\n escapado"
+my_scape_string = "\\Este texto tiene un caracter escapado\nNueva línea"
 print(my_scape_string)
 
 # Formateo
 
-name, surname, age = "Brais", "Moure", 35
-print("Mi nombre es {} {} y mi edad es {}".format(name, surname, age))
-print("Mi nombre es %s %s y mi edad es %d" % (name, surname, age))
-print("Mi nombre es " + name + " " + surname + " y mi edad es " + str(age))
-print(f"Mi nombre es {name} {surname} y mi edad es {age}")
+name, surname, age = "Juan", "Pérez", 20
+print("Mi nombre es {} {} y tengo {} años".format(name, surname, age))
+print("Me llamo %s %s y tengo %d años" % (name, surname, age))
+print("Nombre: " + name + " " + surname + ", Edad: " + str(age))
+print(f"Soy {name} {surname} y tengo {age} años")
 
-# Desempaqueado de caracteres
+# Desempaquetado de caracteres
 
 language = "python"
 a, b, c, d, e, f = language
 print(a)
-print(e)
+print(f)
 
 # División
 
@@ -44,7 +45,7 @@ print(language_slice)
 language_slice = language[-2]
 print(language_slice)
 
-language_slice = language[0:6:2]
+language_slice = language[0:4:2]
 print(language_slice)
 
 # Reverse
@@ -58,8 +59,8 @@ print(language.capitalize())
 print(language.upper())
 print(language.count("t"))
 print(language.isnumeric())
-print("1".isnumeric())
+print("123".isnumeric())
 print(language.lower())
 print(language.lower().isupper())
-print(language.startswith("Py"))
-print("Py" == "py")  # No es lo mismo
+print(language.startswith("py"))
+print("PY" == "py")  # Comparación normal
