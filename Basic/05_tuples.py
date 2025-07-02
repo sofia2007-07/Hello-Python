@@ -1,54 +1,54 @@
-# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=14711
+# Clase en video: https://youtu.be/Kp4Mvapo5kc?t=14711
 
-### Tuples ###
+### Tuplas ###
 
-# Definición
+# Crear tuplas
 
-my_tuple = tuple()
-my_other_tuple = ()
+tupla_1 = tuple()
+otra_tupla = ()
 
-my_tuple = (35, 1.77, "Brais", "Moure", "Brais")
-my_other_tuple = (35, 60, 30)
+tupla_1 = (25, 1.70, "Lucas", "Pérez", "Lucas")
+otra_tupla = (10, 20, 30)
 
-print(my_tuple)
-print(type(my_tuple))
+print(tupla_1)
+print(type(tupla_1))
 
-# Acceso a elementos y búsqueda
+# Ver elementos y buscar datos
 
-print(my_tuple[0])
-print(my_tuple[-1])
-# print(my_tuple[4]) IndexError
-# print(my_tuple[-6]) IndexError
+print(tupla_1[0])
+print(tupla_1[-1])
+# print(tupla_1[5]) → Error
+# print(tupla_1[-6]) → Error
 
-print(my_tuple.count("Brais"))
-print(my_tuple.index("Moure"))
-print(my_tuple.index("Brais"))
+print(tupla_1.count("Lucas"))
+print(tupla_1.index("Pérez"))
+print(tupla_1.index("Lucas"))
 
-# my_tuple[1] = 1.80 'tuple' object does not support item assignment
+# tupla_1[1] = 1.75 → Error: no se puede cambiar una tupla
 
-# Concatenación
+# Unir tuplas
 
-my_sum_tuple = my_tuple + my_other_tuple
-print(my_sum_tuple)
+tupla_total = tupla_1 + otra_tupla
+print(tupla_total)
 
-# Subtuplas
+# Parte de una tupla
 
-print(my_sum_tuple[3:6])
+print(tupla_total[2:5])
 
-# Tupla mutable con conversión a lista
+# Convertir a lista para modificar
 
-my_tuple = list(my_tuple)
-print(type(my_tuple))
+tupla_1 = list(tupla_1)
+print(type(tupla_1))
 
-my_tuple[4] = "MoureDev"
-my_tuple.insert(1, "Azul")
-my_tuple = tuple(my_tuple)
-print(my_tuple)
-print(type(my_tuple))
+tupla_1[4] = "DevTeam"
+tupla_1.insert(1, "Celeste")
+tupla_1 = tuple(tupla_1)
+print(tupla_1)
+print(type(tupla_1))
 
-# Eliminación
+# Borrar tupla entera
+9
+# del tupla_1[2] → Error: no se pueden borrar partes
 
-# del my_tuple[2] TypeError: 'tuple' object doesn't support item deletion
-
-del my_tuple
-# print(my_tuple) NameError: name 'my_tuple' is not defined
+del tupla_1
+# print(tupla_1) → Error: ya no existe la tupla
