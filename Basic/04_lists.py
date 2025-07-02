@@ -1,94 +1,43 @@
-# Clase en vídeo: https://youtu.be/Kp4Mvapo5kc?t=10872
+# Clase en video:
+# https://youtu.be/Kp4Mvapo5kc?t=10872
 
-### Lists ###
+### Listas ###
 
 # Definición
 
-my_list = list()
-my_other_list = []
+lista_uno = list()
+otra_lista = []
 
-print(len(my_list))
+print(len(lista_uno))
 
-my_list = [35, 24, 62, 52, 30, 30, 17]
+lista_uno = [12, 45, 62, 90, 30, 14, 7]
+print(lista_uno)
 
-print(my_list)
-print(len(my_list))
-
-my_other_list = [35, 1.77, "Brais", "Moure"]
-
-print(type(my_list))
-print(type(my_other_list))
+otra_lista = [99, 3.14, "Ana", "García"]
+print(type(lista_uno))
+print(type(otra_lista))
 
 # Acceso a elementos y búsqueda
 
-print(my_other_list[0])
-print(my_other_list[1])
-print(my_other_list[-1])
-print(my_other_list[-4])
-print(my_list.count(30))
-# print(my_other_list[4]) IndexError
-# print(my_other_list[-5]) IndexError
+print(otra_lista[0])
+print(otra_lista[1])
+print(otra_lista[-1])
+print(lista_uno.count(30))
+print(otra_lista.index("Ana"))
 
-print(my_other_list.index("Brais"))
+# Desempaquetado de elementos
+num, decimal, nombre, apellido = otra_lista
+print(nombre)
 
-age, height, name, surname = my_other_list
-print(name)
+# unir listas
+print(lista_uno + otra_lista)
 
-name, height, age, surname = my_other_list[2], my_other_list[1], my_other_list[0], my_other_list[3]
-print(age)
+# Modificación, inserción y borrado
 
-# Concatenación
+otra_lista.append("Python")
+print(otra_lista)
 
-print(my_list + my_other_list)
-#print(my_list - my_other_list)
+otra_lista.insert(1, "Verde")
+print(otra_lista)
 
-# Creación, inserción, actualización y eliminación
-
-my_other_list.append("MoureDev")
-print(my_other_list)
-
-my_other_list.insert(1, "Rojo")
-print(my_other_list)
-
-my_other_list[1] = "Azul"
-print(my_other_list)
-
-my_other_list.remove("Azul")
-print(my_other_list)
-
-my_list.remove(30)
-print(my_list)
-
-print(my_list.pop())
-print(my_list)
-
-my_pop_element = my_list.pop(2)
-print(my_pop_element)
-print(my_list)
-
-del my_list[2]
-print(my_list)
-
-# Operaciones con listas
-
-my_new_list = my_list.copy()
-
-my_list.clear()
-print(my_list)
-print(my_new_list)
-
-my_new_list.reverse()
-print(my_new_list)
-
-my_new_list.sort()
-print(my_new_list)
-
-# Sublistas
-
-print(my_new_list[1:3])
-
-# Cambio de tipo
-
-my_list = "Hola Python"
-print(my_list)
-print(type(my_list))
+otra_lista[1] = "Celeste"
